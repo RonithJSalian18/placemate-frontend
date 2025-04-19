@@ -18,7 +18,7 @@ const CompanyCard = ({
   return (
     <div className="mt-5">
       <div className="p-4 w-full md:w-[25%] text-left shadow hover:shadow-md transition my-4 border-2 rounded-2xl">
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center gap-4">
           {Icon && <Icon className="text-4xl" />}
           {img && (
             <Image
@@ -35,7 +35,7 @@ const CompanyCard = ({
         </div>
 
         <div className="mt-4">
-          <h3 className="text-lg text-gray-900 font-bold">{companyName}</h3>
+          <h3 className="text-lg text-gray-900 font-semibold">{companyName}</h3>
           <p className="text-base text-gray-600">{description}</p>
         </div>
       </div>

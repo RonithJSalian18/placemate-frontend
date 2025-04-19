@@ -19,6 +19,9 @@ const Landing = () => {
         <div className="flex gap-4 px-4 py-2 hover:cursor-pointer">
           <p className="text-2xl">Explore Companies</p>
           <p className="text-2xl">Join the community</p>
+          <button className="bg-orange-500 text-lg text-white rounded-xl p-1 w-[90px] ml-4  hover:bg-orange-600">
+            Login
+          </button>
         </div>
       </div>
 
