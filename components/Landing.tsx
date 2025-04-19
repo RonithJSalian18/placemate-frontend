@@ -1,6 +1,11 @@
 import React from "react";
 import { Search } from "lucide-react";
 import { FaLocationDot } from "react-icons/fa6";
+import { Button } from "@/components/ui/button";
+import CompanyCard from "@/conts/CompanyCard";
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
+import { FaAmazon } from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -11,7 +16,7 @@ const Landing = () => {
           <h4 className="font-bold px-2 py-2 text-4xl">PLACEMATE</h4>
         </div>
 
-        <div className="flex gap-4 px-4 py-2">
+        <div className="flex gap-4 px-4 py-2 hover:cursor-pointer">
           <p className="text-2xl">Explore Companies</p>
           <p className="text-2xl">Join the community</p>
         </div>
@@ -33,6 +38,28 @@ const Landing = () => {
           type="text"
           placeholder="Search for companies"
           className="bg-transparent h-4 text-lg w-full ml-5 border-none focus: outline-none"
+        />
+      </div>
+      <div className="mt-6">
+        <Button className="bg-orange-500 w-[15%] h-12 rounded-2xl text-xl hover:bg-orange-600 text-white">
+          Get Started
+        </Button>
+      </div>
+      <div className="w-[50%] flex justify-around items-center">
+        <CompanyCard
+          companyName="Google"
+          description="Learn about the culture"
+          icon={FcGoogle}
+        />
+        <CompanyCard
+          companyName="Apple"
+          description="Explore career opportunities"
+          icon={FaApple}
+        />
+        <CompanyCard
+          companyName="Amazon"
+          description="Discover hiring process"
+          icon={FaAmazon}
         />
       </div>
     </section>
