@@ -4,7 +4,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <section className="flex m-8 p-4 items-center">
+    <section className="flex m-8 p-4 items-center bg-gray-200">
       <div className="flex  w-full items-center">
         <h1 className="text-4xl font-bold hover:scale-95 transition-all">
           PLACEMATE
