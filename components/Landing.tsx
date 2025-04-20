@@ -1,5 +1,4 @@
 import React from "react";
-import { Search } from "lucide-react";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import CompanyCard from "@/conts/CompanyCard";
@@ -8,6 +7,7 @@ import { FaApple } from "react-icons/fa";
 import { FaAmazon } from "react-icons/fa";
 import { IoIosListBox } from "react-icons/io";
 import { FaChartPie } from "react-icons/fa";
+import SearchBar from "@/conts/SearchBar";
 
 const Landing = () => {
   return (
@@ -37,14 +37,12 @@ const Landing = () => {
         </p>
       </div>
 
-      <div className="bg-white w-1/2 rounded-2xl h-auto p-4 flex items-center border-2 border-gray-300">
-        <Search />
-        <input
-          type="text"
-          placeholder="Search for companies"
-          className="bg-transparent h-4 text-lg w-full ml-5 border-none focus: outline-none"
-        />
-      </div>
+      <SearchBar
+        div_variant="bg-white w-1/2 rounded-2xl h-auto p-4 flex items-center border-2 border-gray-300"
+        input_variant="bg-transparent h-4 text-lg w-full ml-5 border-none focus: outline-none"
+        placeholder="Search for companies"
+      />
+
       <div className="mt-6">
         <Button className="bg-orange-500 w-[15%] h-12 rounded-2xl text-xl hover:bg-orange-600 text-white">
           Get Started
