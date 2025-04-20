@@ -6,6 +6,8 @@ import CompanyCard from "@/conts/CompanyCard";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { FaAmazon } from "react-icons/fa";
+import { IoIosListBox } from "react-icons/io";
+import { FaChartPie } from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -48,22 +50,45 @@ const Landing = () => {
           Get Started
         </Button>
       </div>
-      <div className="w-[50%] flex justify-around items-center">
-        <CompanyCard
-          companyName="Google"
-          description="Learn about the culture"
-          icon={FcGoogle}
-        />
-        <CompanyCard
-          companyName="Apple"
-          description="Explore career opportunities"
-          icon={FaApple}
-        />
-        <CompanyCard
-          companyName="Amazon"
-          description="Discover hiring process"
-          icon={FaAmazon}
-        />
+      <div className="w-full  flex flex-row">
+        <div className="w-[50%] flex justify-start items-center mt-3 gap-4">
+          <CompanyCard
+            companyName="Google"
+            description="Learn about the culture"
+            icon={FcGoogle}
+          />
+          <CompanyCard
+            companyName="Apple"
+            description="Explore career opportunities"
+            icon={FaApple}
+          />
+          <CompanyCard
+            companyName="Amazon"
+            description="Discover hiring process"
+            icon={FaAmazon}
+          />
+        </div>
+        <div className="w-[650px] flex h-8 flex-col ml-10 mt-6">
+          <div className="text-lg font-semibold flex">
+            <h4>Featured Companies</h4>
+          </div>
+          <div className="w-auto flex">
+            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center">
+              <IoIosListBox className="flex text-6xl" />
+              <div className="mx-3 my-2">
+                <h3 className="font-semibold text-xl">Interview Process</h3>
+                <p className="text-base">Labour accress</p>
+              </div>
+            </div>
+
+            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center ml-4">
+              <FaChartPie className="flex text-6xl" />
+              <div className="mx-3 my-2">
+                <h3 className="font-semibold text-xl">Work Culture</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
