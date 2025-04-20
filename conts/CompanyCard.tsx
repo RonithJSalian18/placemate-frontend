@@ -16,7 +16,7 @@ const CompanyCard = ({
   img,
 }: CompanyCardProps) => {
   return (
-    <div className="mt-5 cursor-pointer">
+    <div className="mt-5 cursor-pointer hover:scale-95 transition-all">
       <div className="p-4 w-full md:w-[25%] text-left shadow hover:shadow-md transition my-4 border-2 rounded-2xl">
         <div className="flex items-center gap-4">
           {Icon && <Icon className="text-4xl" />}

@@ -18,10 +18,14 @@ const Landing = () => {
           <h4 className="font-bold px-2 py-2 text-4xl">PLACEMATE</h4>
         </div>
 
-        <div className="flex gap-4 px-4 py-2 hover:cursor-pointer">
-          <p className="text-2xl">Explore Companies</p>
-          <p className="text-2xl">Join the community</p>
-          <button className="bg-orange-500 text-lg text-white rounded-xl p-1 w-[90px] ml-4  hover:bg-orange-600">
+        <div className="flex gap-4 px-4 py-2 hover:cursor-pointer ">
+          <p className="text-2xl hover:scale-95 transition-all">
+            Explore Companies
+          </p>
+          <p className="text-2xl hover:scale-95 transition-all">
+            Join the community
+          </p>
+          <button className="bg-orange-500 text-lg text-white rounded-xl p-1 w-[90px] ml-4  hover:bg-orange-600 hover:scale-95 transition-all">
             Login
           </button>
         </div>
@@ -44,7 +48,7 @@ const Landing = () => {
       />
 
       <div className="mt-6">
-        <Button className="bg-orange-500 w-[15%] h-12 rounded-2xl text-xl hover:bg-orange-600 text-white">
+        <Button className="bg-orange-500 w-[15%] h-12 rounded-2xl text-xl hover:bg-orange-600 text-white hover:scale-95 transition-all">
           Get Started
         </Button>
       </div>
@@ -66,12 +70,12 @@ const Landing = () => {
             icon={FaAmazon}
           />
         </div>
-        <div className="w-[650px] flex h-8 flex-col ml-10 mt-6">
+        <div className="w-[650px] flex h-8 flex-col ml-10 mt-6 ">
           <div className="text-lg font-semibold flex">
             <h4>Featured Companies</h4>
           </div>
           <div className="w-auto flex">
-            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center cursor-pointer">
+            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center cursor-pointer hover:scale-95 transition-all">
               <IoIosListBox className="flex text-6xl" />
               <div className="mx-3 my-2">
                 <h3 className="font-semibold text-xl">Interview Process</h3>
@@ -79,7 +83,7 @@ const Landing = () => {
               </div>
             </div>
 
-            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center ml-4 cursor-pointer">
+            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center ml-4 cursor-pointer hover:scale-95 transition-all">
               <FaChartPie className="flex text-6xl" />
               <div className="mx-3 my-2">
                 <h3 className="font-semibold text-xl">Work Culture</h3>
