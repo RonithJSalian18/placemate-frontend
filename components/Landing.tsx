@@ -50,7 +50,7 @@ const Landing = () => {
           Get Started
         </Button>
       </div>
-      <div className="w-full  flex flex-row">
+      <div className="w-full flex flex-row">
         <div className="w-[50%] flex justify-start items-center mt-3 gap-4">
           <CompanyCard
             companyName="Google"
@@ -73,7 +73,7 @@ const Landing = () => {
             <h4>Featured Companies</h4>
           </div>
           <div className="w-auto flex">
-            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center">
+            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center cursor-pointer">
               <IoIosListBox className="flex text-6xl" />
               <div className="mx-3 my-2">
                 <h3 className="font-semibold text-xl">Interview Process</h3>
@@ -81,7 +81,7 @@ const Landing = () => {
               </div>
             </div>
 
-            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center ml-4">
+            <div className="border-2 border-gray-400 w-[300px] h-auto mt-2 rounded-xl p-3 flex items-center ml-4 cursor-pointer">
               <FaChartPie className="flex text-6xl" />
               <div className="mx-3 my-2">
                 <h3 className="font-semibold text-xl">Work Culture</h3>
