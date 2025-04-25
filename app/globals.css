@@ -28,7 +28,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -54,7 +54,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -66,3 +66,32 @@
     @apply bg-background text-foreground;
   }
 } */
+
+@layer components {
+  .underline-animation {
+    @apply relative inline-block text-black transition-transform ease-in-out duration-500 transform;
+    @apply transition-colors; /* For smooth color fade */
+  }
+
+  .underline-animation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .underline-animation:hover {
+    @apply text-blue-600 scale-105;
+  }
+
+  .underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
